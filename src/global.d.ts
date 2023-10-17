@@ -1,4 +1,5 @@
 import * as React from "react";
+import { mount } from "cypress/react";
 
 export {};
 
@@ -9,4 +10,12 @@ declare global {
       titleId?: string;
     } & React.RefAttributes<SVGSVGElement>
   >;
+}
+
+declare global {
+  namespace Cypress {
+    interface Chainable {
+      mount: typeof mount;
+    }
+  }
 }

@@ -1,13 +1,19 @@
 import { useTodosStore } from "../../stores/todo.store";
 import { Todo } from "./todo/todo";
 import styles from "../../styles/global.module.scss";
+import { TodosListProps } from "./todos-list.props";
 
-export const TodosList = () => {
-  const { todos } = useTodosStore();
+export const TodosList = ({ todos }: TodosListProps) => {
   const doneTodos = useTodosStore((state) => state.getDoneTodos());
 
   return (
     <div className={styles["todos-list"]}>
+      <div className={styles["todos-list-counters"]}>
+        <p>Created tasks: {todos.length}</p>
+        <p>
+          Completed {doneTodos.length} of {todos.length}
+        </p>
+      </div>
       <ul className={styles["todos-list-container"]}>
         {todos.length > 0 ? (
           <>

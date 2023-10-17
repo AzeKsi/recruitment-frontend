@@ -17,6 +17,7 @@ export const useTodoForm = () => {
       }
 
       addTodo({ id: id, text: todo.text, isDone: false });
+      setTodo({ ...todo, text: "" });
     } catch (e) {
       setError((e as Error).message);
     }

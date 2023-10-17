@@ -9,7 +9,7 @@ export const Todo = ({ text, id, isDone }: TodoProps) => {
   const { deleteTodo, toggleTodoDone } = useTodosStore();
 
   return (
-    <li className={styles["todo"]}>
+    <li className={styles["todo"]} data-cy="todos">
       <div className={styles["todo-text"]}>
         <p>{text}</p>
         {isDone && <span className={styles["todo-done"]}>Done</span>}

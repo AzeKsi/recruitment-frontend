@@ -12,6 +12,7 @@ export const Input = ({ inputValue, handleInputChange, error }: InputProps) => {
         value={inputValue}
         onChange={handleInputChange}
         className={clsx(error && styles["border-error"])}
+        data-cy="new-todo"
       />
       {error && <p className={styles["error"]}>{error}</p>}
     </div>
