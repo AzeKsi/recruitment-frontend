@@ -1,3 +1,10 @@
+@import './form-controls/button.module.scss';
+@import './form-controls/input.module.scss';
+
+@import './todos/todo-form.module.scss';
+@import './todos/todos-list.module.scss';
+@import './todos/todo.module.scss';
+
 * {
     margin: 0;
     padding: 0;
@@ -9,4 +16,41 @@ body{
     background: #303030;
     color: #ededed;
     min-height: 100vh;
+}
+
+.container{
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    h1{
+        margin-bottom: 3rem;
+    }
+
+    .wrapper{
+        max-width: 500px;
+        width: 100%;
+    }
+}
+
+button {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+    background: transparent;
+    cursor: pointer;
+}
+
+input[type=text] {
+    all: unset;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid gray;
 }

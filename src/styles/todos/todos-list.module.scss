@@ -1,0 +1,20 @@
+.todos-list{
+    margin-top: 2rem;
+    max-width: 500px;
+    width: 100%;
+
+    .todos-list-container{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+
+        .todos-list-done{
+            margin-top: 2rem;
+        }
+
+        p{
+            text-align: center;
+        }
+    }
+}
+

@@ -1,0 +1,26 @@
+.btn-add {
+    margin-left: 2rem;
+    color: rgb(199, 199, 199);
+
+    &:hover{
+        color: gray;
+    }
+}
+
+.btn-remove {
+    margin: 0 0.5rem;
+    color: rgb(249, 58, 58);
+
+    &:hover{
+        color: rgb(249, 92, 92);
+    }
+}
+
+.btn-done {
+    margin: 0 0.5rem;
+    color: rgb(29, 165, 29);
+
+    &:hover{
+        color: rgb(84, 153, 0);
+    }
+}

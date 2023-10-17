@@ -1,0 +1,16 @@
+.todo-input-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .border-error {
+        border-bottom: 3px solid rgb(255, 87, 87)!important;
+    }
+    
+    .error{
+        margin-top: 0.75rem;
+        color: rgb(255, 87, 87);
+    }
+}
+
+
